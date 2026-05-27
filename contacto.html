@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Curso HTML</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; background: #f4f6f9; }
+    header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    nav { background: #0d47a1; padding: 12px 20px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1em; font-weight: bold; }
+    main { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 8px; padding: 30px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card h2 { color: #1a73e8; font-size: 1.6em; margin-bottom: 20px; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+    label { display: block; font-weight: bold; margin-bottom: 6px; color: #555; }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1em;
+      margin-bottom: 18px;
+      transition: border 0.2s;
+    }
+    input:focus, textarea:focus, select:focus { outline: none; border-color: #1a73e8; }
+    textarea { height: 120px; resize: vertical; }
+    button[type="submit"] {
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background: #1557b0; }
+    .info-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eee; }
+    .info-icon { font-size: 1.5em; }
+    footer { background: #333; color: #ccc; text-align: center; padding: 25px; margin-top: 40px; }
+    footer a { color: #90caf9; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✉️ Contacto</h1>
+    <p>¿Tienes alguna pregunta? ¡Escríbeme!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="about.html">👤 Sobre Mí</a>
+    <a href="contacto.html">✉️ Contacto</a>
+  </nav>
+
+  <main>
+
+    <div class="card">
+      <h2>📬 Formulario de Contacto</h2>
+      <form action="#" method="post">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: María García" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto">
+          <option value="">-- Selecciona un asunto --</option>
+          <option value="consulta">Consulta general</option>
+          <option value="html">Pregunta sobre HTML</option>
+          <option value="proyecto">Sobre el proyecto</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <label>
+          <input type="checkbox" name="acepto" required>
+          Acepto el uso de mis datos para recibir respuesta.
+        </label>
+        <br><br>
+
+        <button type="submit">📤 Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>📍 Información de Contacto</h2>
+      <div class="info-item">
+        <span class="info-icon">📧</span>
+        <div>
+          <strong>Email</strong><br>
+          <span>estudiante@curshtml.com</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🌍</span>
+        <div>
+          <strong>Ubicación</strong><br>
+          <span>Colombia, América del Sur</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">💻</span>
+        <div>
+          <strong>GitHub</strong><br>
+          <span>github.com/mi-usuario</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>📘 Proyecto del Curso HTML para Principiantes</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Inicio</a> | <a href="about.html">Sobre Mí</a> | <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>
