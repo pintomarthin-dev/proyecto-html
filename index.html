@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Página Web - Curso HTML</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; background: #f4f6f9; }
+    header {
+      background: linear-gradient(135deg, #1a73e8, #0d47a1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header p { font-size: 1.1em; opacity: 0.9; }
+    nav {
+      background: #0d47a1;
+      padding: 12px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    section { background: white; border-radius: 8px; padding: 30px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    section h2 { color: #1a73e8; font-size: 1.6em; margin-bottom: 15px; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+    section p { line-height: 1.7; margin-bottom: 12px; }
+    ul, ol { margin-left: 25px; margin-bottom: 12px; line-height: 1.8; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th { background: #1a73e8; color: white; padding: 10px 14px; text-align: left; }
+    td { padding: 10px 14px; border-bottom: 1px solid #e0e0e0; }
+    tr:nth-child(even) { background: #f8f9fa; }
+    .hero-img { width: 100%; height: 220px; background: linear-gradient(135deg, #e8f0fe, #bbdefb); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 4em; margin-bottom: 20px; }
+    footer { background: #333; color: #ccc; text-align: center; padding: 25px; margin-top: 40px; }
+    footer a { color: #90caf9; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌐 Mi Primera Página Web</h1>
+    <p>Aprendiendo HTML desde cero — Curso para Principiantes</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="about.html">👤 Sobre Mí</a>
+    <a href="contacto.html">✉️ Contacto</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <div class="hero-img">🎓</div>
+      <h2>¡Bienvenido a mi sitio web!</h2>
+      <p>Este sitio fue creado como parte del <strong>Curso de HTML para Principiantes</strong>. Aquí aprenderás los conceptos básicos del lenguaje de marcado que da vida a todas las páginas web del mundo.</p>
+      <p>HTML significa <em>HyperText Markup Language</em> y es la estructura fundamental de cualquier página web.</p>
+    </section>
+
+    <section>
+      <h2>📚 ¿Qué aprendemos en este curso?</h2>
+      <ul>
+        <li>Estructura básica de un documento HTML</li>
+        <li>Etiquetas de texto: párrafos, títulos, énfasis</li>
+        <li>Listas ordenadas y no ordenadas</li>
+        <li>Imágenes y enlaces (hipervínculos)</li>
+        <li>Tablas para organizar información</li>
+        <li>Formularios para recibir datos del usuario</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🏷️ Etiquetas HTML más usadas</h2>
+      <table>
+        <tr>
+          <th>Etiqueta</th>
+          <th>Descripción</th>
+          <th>Ejemplo</th>
+        </tr>
+        <tr><td>&lt;h1&gt; – &lt;h6&gt;</td><td>Títulos o encabezados</td><td>Título principal</td></tr>
+        <tr><td>&lt;p&gt;</td><td>Párrafo de texto</td><td>Este es un párrafo</td></tr>
+        <tr><td>&lt;a&gt;</td><td>Enlace o hipervínculo</td><td><a href="#">Haz clic aquí</a></td></tr>
+        <tr><td>&lt;img&gt;</td><td>Imagen</td><td>Muestra una imagen</td></tr>
+        <tr><td>&lt;ul&gt; / &lt;ol&gt;</td><td>Listas</td><td>Lista de elementos</td></tr>
+        <tr><td>&lt;table&gt;</td><td>Tabla de datos</td><td>Filas y columnas</td></tr>
+        <tr><td>&lt;form&gt;</td><td>Formulario</td><td>Datos de usuario</td></tr>
+        <tr><td>&lt;div&gt;</td><td>Contenedor genérico</td><td>Sección de diseño</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>🔢 Pasos para crear una página web</h2>
+      <ol>
+        <li>Abre un editor de texto (VS Code, Notepad++, etc.)</li>
+        <li>Escribe la estructura básica HTML</li>
+        <li>Agrega el contenido con las etiquetas adecuadas</li>
+        <li>Guarda el archivo con la extensión <strong>.html</strong></li>
+        <li>Abre el archivo en tu navegador favorito</li>
+        <li>¡Listo! Tu primera página web está lista</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>📘 Proyecto del Curso HTML para Principiantes</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Inicio</a> |
+      <a href="about.html">Sobre Mí</a> |
+      <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>
