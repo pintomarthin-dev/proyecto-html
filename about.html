@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí - Curso HTML</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; background: #f4f6f9; }
+    header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    nav { background: #0d47a1; padding: 12px 20px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 1em; font-weight: bold; }
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 8px; padding: 30px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card h2 { color: #1a73e8; font-size: 1.6em; margin-bottom: 15px; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+    .profile { display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap; }
+    .avatar { width: 120px; height: 120px; background: linear-gradient(135deg, #1a73e8, #0d47a1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3em; flex-shrink: 0; }
+    .info p { line-height: 1.7; margin-bottom: 10px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+    .skill-tag { background: #e8f0fe; color: #1a73e8; padding: 6px 14px; border-radius: 20px; font-size: 0.9em; font-weight: bold; }
+    blockquote { border-left: 4px solid #1a73e8; padding: 15px 20px; background: #f8fbff; margin: 15px 0; font-style: italic; border-radius: 0 8px 8px 0; }
+    footer { background: #333; color: #ccc; text-align: center; padding: 25px; margin-top: 40px; }
+    footer a { color: #90caf9; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👤 Sobre Mí</h1>
+    <p>Conoce al autor de este sitio web</p>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="about.html">👤 Sobre Mí</a>
+    <a href="contacto.html">✉️ Contacto</a>
+  </nav>
+
+  <main>
+
+    <div class="card">
+      <h2>Mi Perfil</h2>
+      <div class="profile">
+        <div class="avatar">🧑‍💻</div>
+        <div class="info">
+          <p>¡Hola! Soy un estudiante aprendiendo <strong>desarrollo web</strong> desde cero. Este sitio web es el proyecto final de mi primer curso de HTML.</p>
+          <p>Estoy emocionado por comenzar este viaje en el mundo del desarrollo web, donde HTML es el primer gran paso.</p>
+          <p><strong>Ciudad:</strong> Colombia 🇨🇴</p>
+          <p><strong>Meta:</strong> Convertirme en desarrollador web full-stack</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Habilidades que estoy aprendiendo</h2>
+      <div class="skills">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Diseño Web</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Responsive Design</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 Mi experiencia con el curso</h2>
+      <blockquote>
+        "Aprender HTML fue más fácil de lo que pensaba. Las etiquetas tienen lógica y con práctica se vuelven naturales. ¡Animo a todos a empezar!"
+      </blockquote>
+      <p>El curso me enseñó cómo los navegadores interpretan el código HTML para mostrar páginas web. Aprendí que cada etiqueta tiene un propósito específico y que la estructura del documento es fundamental.</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Mis objetivos</h2>
+      <ul style="margin-left: 25px; line-height: 2;">
+        <li>Dominar HTML y CSS para crear diseños atractivos</li>
+        <li>Aprender JavaScript para hacer páginas interactivas</li>
+        <li>Construir mi portafolio personal en línea</li>
+        <li>Crear proyectos reales que ayuden a otros</li>
+        <li>Contribuir a la comunidad de código abierto</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>📘 Proyecto del Curso HTML para Principiantes</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Inicio</a> | <a href="about.html">Sobre Mí</a> | <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>
